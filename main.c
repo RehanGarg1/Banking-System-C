@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 typedef struct {
     char name[50];
     double balance;
@@ -16,7 +16,7 @@ int main(){
         scanf("%d",&choice);
         getchar();
         if(choice==1){
-            account[n]=(Accounts){"",0,""};
+            account[n]=(Accounts){"",0,"",""};
             printf("Enter the account name: \n");
             fgets(account[n].name,50,stdin);
             account[n].name[strlen(account[n].name)-1]='\0';
